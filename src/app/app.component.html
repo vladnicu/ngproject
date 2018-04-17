@@ -19,8 +19,9 @@
            <div class="notes-container " *ngFor="let note of notes; let i = index">
               <div class="row  row-margin">
                   <div class="col">
-                    <input type="checkbox" class="form-check-input">
-                    <label class="form-check-label" (click)="onSelect(note)" >{{ note.title }}</label>
+                    <input type="checkbox" class="form-check-input" [checked]="note.checked" (change)="note.checked = !note.checked">
+                    <label class="form-check-label" (click)="onSelect(note)"
+                    [class.custom-decoration]="note.checked" >{{ note.title }}</label>
                     <input type="submit" class="btn btn-danger float-right" value="X" (click)="removeItem(i)">
                   </div>
               </div>

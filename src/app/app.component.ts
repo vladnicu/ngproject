@@ -27,7 +27,8 @@ export class AppComponent implements OnInit {
   addItem(){
     var note: Note = {
       title: this.selectedNote.title,
-      text: this.selectedNote.text
+      text: this.selectedNote.text,
+      checked: this.selectedNote.checked
     };
     
     this.notes.push(note);
