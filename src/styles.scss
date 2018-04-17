@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #E6E9ED;
+}
+
+.panel{
+    margin: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.custom-btn{
+    background-color: #009874;
+    color: white;
+    margin-left: 30px;
+}
+
+.custom-text{
+    border: 1px solid #009874;
+}
+
+.custom-decoration{
+    text-decoration: line-through;
+}
+
+.row-margin{
+    margin-bottom: 3px;
+}
