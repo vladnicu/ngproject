@@ -33,6 +33,7 @@ export class AppComponent implements OnInit {
     
     this.notes.push(note);
     this.selectedNote = note;
+    this.notesCount = this.notes.length;
   }
 
   removeItem(i){
