@@ -13,17 +13,17 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-3 panel">
+    <div class="col-3 panel"> 
       <form>
         <div class="form-check">
            <div class="notes-container " *ngFor="let note of notes; let i = index">
               <div class="row  row-margin">
                   <div class="col">
-            <input type="checkbox" class="form-check-input">
-            <label class="form-check-label" (click)="onSelect(note)" >{{ note.title }}</label>
-            <input type="submit" class="btn btn-danger float-right" value="X" (click)="removeItem(i)">
-            </div>
-            </div>
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label" (click)="onSelect(note)" >{{ note.title }}</label>
+                    <input type="submit" class="btn btn-danger float-right" value="X" (click)="removeItem(i)">
+                  </div>
+              </div>
           </div>
         </div>
       </form>
